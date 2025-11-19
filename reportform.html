@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Form</title>
+    <style>
+        td {
+            border: 1px solid black;
+            padding: 3px;
+        }
+
+        .heading {
+            font-size: 18px;
+            text-align: right;
+            vertical-align: text-top;
+            font-weight: 600;
+        }
+
+        input[type=text],
+        [type=password],
+        [type=email] {
+            width: 400px;
+        }
+
+        small {
+            font-size: 16px;
+            color: blue;
+        }
+
+        select {
+            font-size: 16px;
+            text-transform: uppercase;
+            width: 150px;
+        }
+
+        body {
+            border: 2px solid black;
+            padding: 20px;
+            width: 55%;
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            transform: translate(-50%, -5%);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">REPORT FORM</h1>
+    <table align="center">
+        <form action="">
+            <tr>
+                <th colspan="2"
+                    style="background-color: darkblue; color: white; width: 1000px; height: 60px; font-size: 50px;">
+                    INFORMATION
+                    TABLE</th>
+            </tr>
+            <tr>
+                <td class="heading">NAME</td>
+                <td style="width: 60%;"><input type="text" id="name">
+                    <br>
+                    <small for="name">ENTER YOUR FULL NAME</small>
+                </td>
+            </tr>
+            <tr>
+                <td class="heading">EMAIL</td>
+                <td>
+                    <input type="email" name="" id="email">
+                    <br>
+                    <small for="email">ENTER AN INTERNET CONTACT ADDRESS</small>
+                </td>
+            </tr>
+            <tr>
+                <td class="heading">PASSWORD</td>
+                <td>
+                    <input type="password" name="" id="pass">
+                    <br>
+                    <small for="pass">ENTER A CODE TO IDENTIFY YOU</small>
+                </td>
+            </tr>
+            <tr>
+                <td class="heading">ADDRESS</td>
+                <td>
+                    <input type="text" name="" id="address">
+                    <br>
+                    <small for="address">COMPLETE ADDRESS</small>
+                </td>
+            </tr>
+            <tr>
+                <td class="heading">COUNTRY</td>
+                <td>
+                    <select name="country">
+                        <option>Oman</option>
+                        <option selected>Pakistan</option>
+                        <option>Qatar</option>
+                        <option>Russia</option>
+                        <option>Spain</option>
+                        <option>Turkey</option>
+                        <option>Ukraine</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="heading">GENDER</td>
+                <td>
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">MALE</label>
+                    <input type="radio" name="gender" id="fmale">
+                    <label for="fmale">FEMALE</label>
+                </td>
+            <tr>
+                <td class="heading">HOBBIES</td>
+                <td>
+                    <input type="checkbox" name="" id="">
+                    <label for="">READING</label> <br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">LISTENING MUSIC</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">GARDENING</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">SWIMMING</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">ATHELETICS</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="heading">YOUR WEBSITE</td>
+                <td>
+                    <input type="text" name="" value="https://" id=""><br>
+                    <small>PROVIDE YOUR WEBSITE URL IF EXISTS (NOT NESSESARY) </small>
+                </td>
+            </tr>
+            <tr>
+                <td class="heading">OTHER INFORMATION ABOUT YOU</td>
+                <td>
+                    <textarea rows="10" cols="53" name="" id=""></textarea><br>
+                    <small>WRITE ANY OTHER INFORMATION THAT IS NOT PRESENT HERE</small>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: right;">
+                    <input type="submit" value="SEND IN MY REPORT">
+                </td>
+                <td>
+                    <input type="reset" value="ERASE REPORT FORM">
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+
+</html>
