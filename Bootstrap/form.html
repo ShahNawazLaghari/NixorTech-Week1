@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <title>FORM With Bootstrap</title>
+
+    <style>
+        .container {
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container pt-5">
+        <form action="#" method="GET">
+            <h1 class="text-center pt-5 pb-5">Registration Form</h1>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="First Name" name="first-name">
+            </div>
+
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Last Name" name="last-name">
+            </div>
+
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Email" name="email">
+                <span class="input-group-text" id="basic-addon2">@example.com</span>
+            </div>
+
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Address" name="address">
+            </div>
+
+            <div class="input-group mb-3">
+                <label for="">Gender</label>&nbsp;&nbsp;&nbsp;
+                <label for="">Male</label>&nbsp;&nbsp;&nbsp;
+                <input type="radio" class="" name="gender" id="" value="male">&nbsp;&nbsp;&nbsp;
+                <label for="">Female</label>&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="gender" id="" value="female">&nbsp;&nbsp;&nbsp;
+            </div>
+
+            <div class="mb-3">
+                <label for="basic-url" class="form-label">Your Website URL</label>
+                <div class="input-group">
+                    <span class="input-group-text" id="basic-addon3">https://example.com</span>
+                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4"
+                        name="website">
+                </div>
+                <div class="form-text" id="basic-addon4">Enter Your Website URL if it Exists</div>
+            </div>
+
+            <div class="input-group">
+                <span class="input-group-text">With textarea</span>
+                <textarea class="form-control" aria-label="With textarea" name="comment"></textarea>
+            </div>
+            <input type="submit" class="form-control btn btn-primary mt-2" value="Submit">
+            <input type="reset" class="form-control btn btn-dark mt-2" value="Reset">
+        </form>
+    </div>
+</body>
+
+</html>
